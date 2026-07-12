@@ -5,6 +5,7 @@ description = "Local AI Engineering Assistant"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "chromadb>=1.5.9",
     "fastapi>=0.139.0",
     "ollama>=0.6.2",
     "pydantic>=2.13.4",
@@ -12,6 +13,8 @@ dependencies = [
     "pymupdf>=1.28.0",
     "pypdf>=6.14.2",
     "tiktoken>=0.13.0",
+    "torch>=2.13.0",
+    "transformers>=5.13.1",
     "uvicorn>=0.51.0",
 ]
 
