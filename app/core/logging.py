@@ -7,11 +7,10 @@ def setup_logging() -> None:
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        handlers=[
-            logging.StreamHandler(sys.stdout)
-        ]
+        handlers=[logging.StreamHandler(sys.stdout)],
     )
     # Silence overly verbose third-party loggers if needed
     logging.getLogger("uvicorn.access").setLevel(logging.WARNING)
+
 
 logger = logging.getLogger("ai_assistant")
