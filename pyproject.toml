@@ -3,9 +3,8 @@ name = "ai-assistant"
 version = "0.1.0"
 description = "Local AI Engineering Assistant"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11,<3.13"
 dependencies = [
-    "chromadb>=1.5.9",
     "fastapi>=0.139.0",
     "ollama>=0.6.2",
     "pydantic>=2.13.4",

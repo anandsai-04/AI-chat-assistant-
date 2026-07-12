@@ -8,6 +8,9 @@ class Settings(BaseSettings):
     # Example setting for later phases
     OLLAMA_BASE_URL: str = "http://localhost:11434"
     DEFAULT_MODEL: str = "qwen2.5-coder:latest"
+    
+    # Pinecone
+    PINECONE_API_KEY: str = ""
 
     model_config = SettingsConfigDict(
         env_file=".env",
